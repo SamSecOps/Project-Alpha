@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BrightCo | Modern Commercial Site</title>
+    <meta name="description" content="A simple modern commercial website starter." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Top bar -->
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="#">
+          <span class="brand__dot" aria-hidden="true"></span>
+          BrightCo
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+
+        <nav class="nav" id="nav">
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+          <a class="btn btn--small" href="#contact">Get a Quote</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <main>
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="pill">Commercial Website Starter</p>
+            <h1>Grow your business with a clean modern website.</h1>
+            <p class="muted">
+              This simple template is fast, mobile friendly, and includes a lead form with
+              basic validation plus a smooth user experience.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn" href="#pricing">See Pricing</a>
+              <a class="btn btn--ghost" href="#features">Explore Features</a>
+            </div>
+
+            <div class="stats" aria-label="Highlights">
+              <div class="stat">
+                <div class="stat__value">99%</div>
+                <div class="stat__label">Mobile Ready</div>
+              </div>
+              <div class="stat">
+                <div class="stat__value">1 Day</div>
+                <div class="stat__label">Setup Time</div>
+              </div>
+              <div class="stat">
+                <div class="stat__value">24/7</div>
+                <div class="stat__label">Support Option</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__card" role="img" aria-label="Product preview card">
+            <div class="card">
+              <div class="card__top">
+                <div class="badge">New</div>
+                <div class="dots" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+              <h3>BrightCo Launch Kit</h3>
+              <p class="muted">
+                A simple landing page, pricing section, and contact form to capture leads.
+              </p>
+              <ul class="checklist">
+                <li>Responsive layout</li>
+                <li>Smooth scrolling</li>
+                <li>Form validation</li>
+                <li>Modern design</li>
+              </ul>
+              <button class="btn btn--full" id="demoToastBtn">Try Demo Action</button>
+              <p class="tiny muted">No signup. Just a quick preview interaction.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section__head">
+            <h2>Everything you need to look professional</h2>
+            <p class="muted">
+              Simple sections that work for most businesses: clear value, pricing, and contact.
+            </p>
+          </div>
+
+          <div class="grid-3">
+            <article class="feature">
+              <h3>Fast and lightweight</h3>
+              <p class="muted">No frameworks, no build tools. Just open and run.</p>
+            </article>
+            <article class="feature">
+              <h3>Modern styling</h3>
+              <p class="muted">Clean spacing, modern typography, and subtle shadows.</p>
+            </article>
+            <article class="feature">
+              <h3>Lead capture</h3>
+              <p class="muted">Contact form validates inputs and shows a success state.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section class="section section--alt" id="pricing">
+        <div class="container">
+          <div class="section__head">
+            <h2>Simple pricing</h2>
+            <p class="muted">Pick a plan to match your stage. Upgrade anytime.</p>
+          </div>
+
+          <div class="grid-3">
+            <article class="price">
+              <h3>Starter</h3>
+              <p class="price__tag">$49<span class="muted">/mo</span></p>
+              <ul class="checklist">
+                <li>1 page site</li>
+                <li>Email support</li>
+                <li>Basic updates</li>
+              </ul>
+              <a class="btn btn--full btn--ghost" href="#contact" data-plan="Starter">Choose Starter</a>
+            </article>
+
+            <article class="price price--featured" aria-label="Most popular plan">
+              <div class="price__ribbon">Most Popular</div>
+              <h3>Business</h3>
+              <p class="price__tag">$99<span class="muted">/mo</span></p>
+              <ul class="checklist">
+                <li>Up to 5 sections</li>
+                <li>Priority support</li>
+                <li>Monthly analytics</li>
+              </ul>
+              <a class="btn btn--full" href="#contact" data-plan="Business">Choose Business</a>
+            </article>
+
+            <article class="price">
+              <h3>Premium</h3>
+              <p class="price__tag">$199<span class="muted">/mo</span></p>
+              <ul class="checklist">
+                <li>Custom design</li>
+                <li>Search engine optimization basics</li>
+                <li>Dedicated support</li>
+              </ul>
+              <a class="btn btn--full btn--ghost" href="#contact" data-plan="Premium">Choose Premium</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section" id="contact">
+        <div class="container contact">
+          <div class="contact__copy">
+            <h2>Let’s build something clean and effective</h2>
+            <p class="muted">
+              Fill this form to capture leads. This demo does not send emails; it simulates success.
+            </p>
+
+            <div class="trust">
+              <div class="trust__item">
+                <div class="trust__icon" aria-hidden="true">⚡</div>
+                <div>
+                  <strong>Quick turnaround</strong>
+                  <div class="muted">Launch-ready in days.</div>
+                </div>
+              </div>
+              <div class="trust__item">
+                <div class="trust__icon" aria-hidden="true">🔒</div>
+                <div>
+                  <strong>Reliable</strong>
+                  <div class="muted">Simple, stable, maintainable.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="form" id="leadForm" novalidate>
+            <input type="hidden" id="plan" name="plan" value="Business" />
+
+            <div class="form__row">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" placeholder="Jane Doe" autocomplete="name" />
+              <small class="error" id="nameError"></small>
+            </div>
+
+            <div class="form__row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="jane@company.com" autocomplete="email" />
+              <small class="error" id="emailError"></small>
+            </div>
+
+            <div class="form__row">
+              <label for="message">What do you need?</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us what you're trying to achieve..."></textarea>
+              <small class="error" id="messageError"></small>
+            </div>
+
+            <button class="btn btn--full" type="submit">Request a Quote</button>
+            <p class="tiny muted">By submitting, you agree to be contacted about your request.</p>
+
+            <div class="success" id="successBox" role="status" aria-live="polite">
+              <strong>Success!</strong> We received your request. We will reply soon.
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted">© <span id="year"></span> BrightCo. All rights reserved.</p>
+        <div class="footer__links">
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Toast -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
